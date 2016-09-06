@@ -1,2 +1,16 @@
 home.title = Welcome to the Breakfast Club
 home.header = Welcome to the Breakfast Club
+home.subheader = Please input your details to claim your free breakfast. You may only choose one.
+
+form.firstName = First name:
+form.secondName = Last name:
+form.pid = ID number:
+form.location = Location:
+form.team = Team:
+
+
+form.h2 = Breakfast options:
+
+form.menu1 = Sandwich
+form.menu2 = Cereal
+form.menu3 = Other

@@ -2,8 +2,67 @@
 
 @main(Messages("home.title")) {
 
-  <div class="container">
-    <h1 id="welcome-heading">@Messages("home.header")</h1>
+  <div class="jumbotron">
+      <div class="container">
+          <h1 id="welcome-heading">@Messages("home.header")</h1>
+          <p class="lead">@Messages("home.subheader")</p>
+      </div>
   </div>
 
+    <div class="container">
+        <div class="col-md-4">
+            <form>
+                <p class="lead">@Messages("form.firstName")
+                <input type="text" name="firstname"></p>
+                <p class="lead">@Messages("form.secondName")
+                <input type="text" name="secondname"></p>
+                <p class="lead">@Messages("form.pid")
+                <input type="text" name="pid"></p>
+            </form>
+        </div>
+        <div class="col-md-3">
+            <form>
+                <p class="lead">@Messages("form.location")
+                    <input type="text" name="location"></p>
+            <p class="lead">@Messages("form.team")
+                <input type="text" name="team"></p>
+            </form>
+        </div>
+        <div class="col-md-5">
+
+        </div>
+
+        <div class="col-md-12">
+            <hr>
+            <h2>@Messages("form.h2")</h2>
+        </div>
+
+        <div class="col-md-4 lead">
+            <h3>@Messages("form.menu1")</h3>
+            <form>
+                <input type="radio" name="breakfast" value="Bacon"> Bacon<br>
+                <input type="radio" name="breakfast" value="Cucumber"> Cucumber<br>
+                <input type="radio" name="breakfast" value="Spam"> Spam
+        </div>
+        <div class="col-md-4 lead">
+            <h3>@Messages("form.menu2")</h3>
+                <input type="radio" name="breakfast" value="Superhoops"> Superhoops<br>
+                <input type="radio" name="breakfast" value="Lokopops"> Lokopops<br>
+                <input type="radio" name="breakfast" value="Weaties"> Weaties<br>
+        </div>
+        <div class="col-md-4 lead">
+            <h3>@Messages("form.menu3")</h3>
+            <input type="radio" name="breakfast" value="Baconcrisps"> Bacon crisps<br>
+            <input type="radio" name="breakfast" value="Apple">  Apple<br>
+            <input type="radio" name="breakfast" value="Raisans"> Raisins<br>
+        </div>
+        <div class="col-md-12 lead">
+            <hr>
+
+            <button type="button" class="btn btn-primary btn-lg">Submit</button>
+            </form>
+
+        </div>
+
+    </div>
 }
